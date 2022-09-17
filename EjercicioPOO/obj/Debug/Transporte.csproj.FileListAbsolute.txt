@@ -1,7 +1,0 @@
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\obj\Debug\Transporte.csproj.AssemblyReference.cache
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\obj\Debug\Transporte.csproj.CoreCompileInputs.cache
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\bin\Debug\Transporte.exe.config
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\bin\Debug\Transporte.exe
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\bin\Debug\Transporte.pdb
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\obj\Debug\Transporte.exe
-C:\Users\Usuario\Desktop\labnet2022\LabNet2022-Transporte\Transporte\obj\Debug\Transporte.pdb
