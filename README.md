@@ -1,2 +1,2 @@
-# Link
-[title](https://gerlr.github.io/LabNet2022/)
+# Link github pages
+[https://gerlr.github.io/LabNet2022/](https://gerlr.github.io/LabNet2022/)
