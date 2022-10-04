@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik|Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="paper">
+        <h1>Contáctanos!</h1>
+        <form id="frmContacto" action="" class="formulario">
+            <samp id='inpNombreinvalid'>*Este campo es obligatorio</samp>
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                <input type="text" class="form-control" id="inpNombre" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <samp id='inpApellidoinvalid'>*Este campo es obligatorio</samp>
+            <div class="input-group input-group-sm mb-3" id="txt">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Apellido</span>
+                <input type="text" class="form-control" id="inpApellido" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+            <samp id='inpEdadinvalid'>*Este campo es obligatorio</samp>
+            <div class="input-group input-group-sm mb-3" style="width: 50%; align-self: flex-start;">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Edad</span>
+                <input type="number" min="12" max="99" class="form-control" id="inpEdad"
+                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradioMasculino" autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradioMasculino">Masculino</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradioFemenino" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradioFemenino">Femenino</label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradioOtro" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradioOtro">Otro</label>
+            </div>
+
+            <Label style="margin-top: 15px;">Información adicional</Label>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Empresa</span>
+                <input type="text" class="form-control" id="inpEmpresa" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm">
+            </div>
+            <div>
+                <button type="button" id="btnEnviar" class="btn btn-primary">Enviar</button>
+                <button type="button" id="btnLimpiar" class="btn btn-seconday">Limpiar</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
