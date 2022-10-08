@@ -1,0 +1,15 @@
+﻿@model TP4.EF.MVC.Models.ErrorView
+
+@{
+    ViewBag.Title = "Shippers Page";
+}
+
+<h2>Ha ocurrido un error</h2>
+
+
+        @foreach (string str in Model.listadoDeErrores)
+        {
+            <div>@str.ToString()</div>
+        }
+
+

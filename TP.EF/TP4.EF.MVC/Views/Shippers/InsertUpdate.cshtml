@@ -1,0 +1,51 @@
+﻿@model TP4.EF.MVC.Models.ShippersView
+
+@{
+    ViewBag.Title = "Shippers Insert/Update";
+}
+
+@if (Model.Modificar == "Mod")
+{
+    <h1>Modificar Shippers</h1>
+}
+else
+{
+    <h1>Insertar Shippers</h1>
+}
+
+<br />
+
+<div class="form-group">
+    @using (Html.BeginForm("InsertUpdate", "Shippers", FormMethod.Post))
+    {
+
+        @Html.HiddenFor(s => s.ShipperID)
+        @Html.HiddenFor(s => s.Modificar)
+
+        if (Model.Modificar == "Mod")
+        {
+            <label> Id del shipper a editar: </label>
+            <br />
+            @Html.DisplayFor(s => s.ShipperID)
+            <br />
+        }
+
+        <label> Nombre de la compañía: </label>
+        <br />
+        @Html.EditorFor(s => s.CompanyName)
+        <br />  
+        @Html.ValidationMessageFor(m => m.CompanyName, "", new { @class = "text-danger" })
+        <br />
+        <label> Teléfono: </label>
+        <br />
+        @Html.EditorFor(s => s.Phone) 
+        <br />
+        @Html.ValidationMessageFor(s => s.Phone, "", new { @class = "text-danger" })
+        <br />
+        <br />
+        <input type="submit" name="" value="Guardar" class="btn-success" /> 
+
+    }
+</div>
+
+
