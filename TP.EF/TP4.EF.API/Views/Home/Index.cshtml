@@ -1,0 +1,44 @@
+﻿@model List<TP4.EF.API.Models.StarWarsCharacterView>
+
+@{
+    ViewBag.Title = "Star Wars API";
+}
+<div class="jumbotron">
+    <h3>TP 8 WebAPI</h3>
+    <h3>Consumo de Star Wars Api - categoría "people"  </h3>
+    <br />
+
+    <table class="table">
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Altura
+            </th>
+            <th>
+                Masa
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Height)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mass)
+                </td>
+
+            </tr>
+        }
+
+    </table>
+
+</div>
